@@ -1,0 +1,10 @@
+{
+	"app_name": "api deploy",
+	"base_url": "http://localhost:8180",
+	"port": 8180,
+	"verbose": true,
+	"static_dir": "static",
+	"view_dir": "views",
+	"database": "mysql",
+	"database_conn": "root:root@tcp(mysqlhost:3306)/project_deploy?parseTime=true"
+}
