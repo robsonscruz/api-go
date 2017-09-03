@@ -14,3 +14,7 @@ type HistoryDeploy struct {
 	CreatedAt time.Time   `schema:"-"`
 	UpdatedAt time.Time   `schema:"-"`
 }
+
+func (HistoryDeploy) TableName() string {
+  return "history_deploy"
+}

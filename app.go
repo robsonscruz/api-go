@@ -6,9 +6,12 @@ import (
 	"net/http"
 
 	"github.com/gernest/utron"
-	c "github.com/robsonscruz/api-go/controllers"
-	"github.com/robsonscruz/api-go/models"
+	"github.com/gorilla/schema"
+	c "./controllers"
+	"./models"
 )
+
+var decoder = schema.NewDecoder()
 
 func main() {
 

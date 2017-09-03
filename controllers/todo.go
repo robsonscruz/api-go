@@ -6,7 +6,7 @@ import (
 
 	"github.com/gernest/utron/controller"
 	"github.com/gorilla/schema"
-	"github.com/utronframework/todo/models"
+	"../models"
 )
 
 var decoder = schema.NewDecoder()
@@ -60,9 +60,9 @@ func (t *Todo) Delete() {
 func NewTodo() controller.Controller {
 	return &Todo{
 		Routes: []string{
-			"get;/;Home",
-			"post;/create;Create",
-			"get;/delete/{id};Delete",
+			"get;/home;Home",
+			"post;/home/create;Create",
+			"get;/home/delete/{id};Delete",
 		},
 	}
 }
