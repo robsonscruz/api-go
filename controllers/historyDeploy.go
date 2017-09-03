@@ -2,11 +2,13 @@ package controllers
 
 import (
 	"net/http"
-
 	"github.com/gernest/utron/controller"
-	"../models"
+	"github.com/robsonscruz/api-go/models"
 	"time"
+	"github.com/gorilla/schema"
 )
+
+var decoder = schema.NewDecoder()
 
 //HistoryDeploy is a controller for HistoryDeploy list
 type HistoryDeploy struct {

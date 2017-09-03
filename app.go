@@ -7,8 +7,8 @@ import (
 
 	"github.com/gernest/utron"
 	"github.com/gorilla/schema"
-	c "./controllers"
-	"./models"
+	c "github.com/robsonscruz/api-go/controllers"
+	"github.com/robsonscruz/api-go/models"
 )
 
 var decoder = schema.NewDecoder()
