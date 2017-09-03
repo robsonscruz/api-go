@@ -22,14 +22,12 @@ func main() {
 	}
 
 	// Register Models
-	app.Model.Register(&models.Todo{})
 	app.Model.Register(&models.HistoryDeploy{})
 
 	// CReate Models tables if they dont exist yet
 	app.Model.AutoMigrateAll()
 
 	// Register Controller
-	app.AddController(c.NewTodo)
 	app.AddController(c.NewHistoryDeploy)
 
 	// Start the server
